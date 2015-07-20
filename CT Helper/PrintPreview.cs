@@ -38,7 +38,6 @@ namespace CT_Helper
             Size s = this.ClientSize;
             memoryImage = new Bitmap(s.Width, s.Height, myGraphics);
             Graphics memoryGraphics = Graphics.FromImage(memoryImage);
-            Point panel = 
             memoryGraphics.CopyFromScreen(this.Location.X, this.Location.Y, 0, 0, s);
         }
 
