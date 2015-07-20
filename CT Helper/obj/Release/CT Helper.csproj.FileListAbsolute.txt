@@ -1,0 +1,12 @@
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\CT Helper\CT Helper\bin\Release\CT Helper.exe.config
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\CT Helper\CT Helper\obj\Release\CT Helper.exe
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\CT Helper\CT Helper\obj\Release\CT Helper.pdb
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\CT Helper\CT Helper\bin\Release\CT Helper.exe
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\CT Helper\CT Helper\bin\Release\CT Helper.pdb
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\CT Helper\CT Helper\obj\Release\CT Helper.csprojResolveAssemblyReference.cache
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\CT Helper\CT Helper\obj\Release\CT_Helper.BMI.resources
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\CT Helper\CT Helper\obj\Release\CT_Helper.DLP.resources
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\CT Helper\CT Helper\obj\Release\CT_Helper.Form1.resources
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\CT Helper\CT Helper\obj\Release\CT_Helper.PrintPreview.resources
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\CT Helper\CT Helper\obj\Release\CT_Helper.Properties.Resources.resources
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\CT Helper\CT Helper\obj\Release\CT Helper.csproj.GenerateResource.Cache
