@@ -24,10 +24,8 @@ namespace CT_Helper
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //clearBtn_Click(null, null);
             weightBox.Text = "";
             heightBox.Text = "";
-            //DLPClearBtn_Click(null, null);
             CTCADLPBox.Text = "";
             CaScoreDLPBox.Text = "";
         }
@@ -327,6 +325,7 @@ namespace CT_Helper
             print.volsSentText.Text = sendVolBox.Text;
             print.bloodPressureText.Text = bloodPressureBox.Text;
             print.bestText.Text = bestCombo.Text;
+            print.bestText2.Text = bestCombo.Text;
 
             print.Show(this);
         }
@@ -354,14 +353,23 @@ namespace CT_Helper
             if (!string.IsNullOrWhiteSpace(heightBox.Text) &&
                 !string.IsNullOrWhiteSpace(weightBox.Text))
             {
-                heightBox.Enabled = false;
-                weightBox.Enabled = false;
-                CTCABtn.Enabled = false;
-                CABGBtn.Enabled = false;
-                TROBtn.Enabled = false;
-                calculateBMIBtn.Enabled = false;
-                tabControl1.SelectedIndex = 2;
-                clearBtn.Text = "Edit";
+                if (BMILabel.Text == "?" ||
+                    contrastAmount.Text == "?")
+                {
+                    MessageBox.Show("Please calculate BMI before continuing",
+                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    heightBox.Enabled = false;
+                    weightBox.Enabled = false;
+                    CTCABtn.Enabled = false;
+                    CABGBtn.Enabled = false;
+                    TROBtn.Enabled = false;
+                    calculateBMIBtn.Enabled = false;
+                    tabControl1.SelectedIndex = 2;
+                    clearBtn.Text = "Edit";
+                }
             }
             else
             {
@@ -702,7 +710,7 @@ namespace CT_Helper
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("An Insignificant Production.\nCreated in C# using Visual Studio", 
+            MessageBox.Show("an insignificant production.", 
                 "About", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 

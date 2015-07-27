@@ -187,12 +187,14 @@
             // 
             // calculateBMIBtn
             // 
+            this.calculateBMIBtn.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.calculateBMIBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.calculateBMIBtn.Location = new System.Drawing.Point(147, 143);
             this.calculateBMIBtn.Name = "calculateBMIBtn";
             this.calculateBMIBtn.Size = new System.Drawing.Size(75, 23);
             this.calculateBMIBtn.TabIndex = 26;
             this.calculateBMIBtn.Text = "Calculate";
-            this.calculateBMIBtn.UseVisualStyleBackColor = true;
+            this.calculateBMIBtn.UseVisualStyleBackColor = false;
             this.calculateBMIBtn.Click += new System.EventHandler(this.calculateBMIBtn_Click);
             // 
             // BMILabel
@@ -207,12 +209,14 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(266, 243);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 33;
             this.button1.Text = "OK";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // BMI
@@ -235,6 +239,8 @@
             this.Controls.Add(this.weightLabel);
             this.Controls.Add(this.calculateBMIBtn);
             this.Controls.Add(this.BMILabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "BMI";
             this.Text = "BMI";
             this.Load += new System.EventHandler(this.BMI_Load);

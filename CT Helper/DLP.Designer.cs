@@ -95,22 +95,26 @@
             // 
             // CTCADLPBtn
             // 
+            this.CTCADLPBtn.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.CTCADLPBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CTCADLPBtn.Location = new System.Drawing.Point(207, 125);
             this.CTCADLPBtn.Name = "CTCADLPBtn";
             this.CTCADLPBtn.Size = new System.Drawing.Size(75, 23);
             this.CTCADLPBtn.TabIndex = 17;
             this.CTCADLPBtn.Text = "Calculate";
-            this.CTCADLPBtn.UseVisualStyleBackColor = true;
+            this.CTCADLPBtn.UseVisualStyleBackColor = false;
             this.CTCADLPBtn.Click += new System.EventHandler(this.CTCADLPBtn_Click);
             // 
             // CaScoreDLPBtn
             // 
+            this.CaScoreDLPBtn.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.CaScoreDLPBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CaScoreDLPBtn.Location = new System.Drawing.Point(207, 98);
             this.CaScoreDLPBtn.Name = "CaScoreDLPBtn";
             this.CaScoreDLPBtn.Size = new System.Drawing.Size(75, 23);
             this.CaScoreDLPBtn.TabIndex = 16;
             this.CaScoreDLPBtn.Text = "Calculate";
-            this.CaScoreDLPBtn.UseVisualStyleBackColor = true;
+            this.CaScoreDLPBtn.UseVisualStyleBackColor = false;
             this.CaScoreDLPBtn.Click += new System.EventHandler(this.CaScoreDLPBtn_Click);
             // 
             // CTCADLPTotal
@@ -165,12 +169,14 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(313, 174);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 23;
             this.button1.Text = "OK";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // DLP
@@ -190,6 +196,8 @@
             this.Controls.Add(this.DLPLabel);
             this.Controls.Add(this.CTCADLPLabel);
             this.Controls.Add(this.CaDLPLabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "DLP";
             this.Text = "DLP";
             ((System.ComponentModel.ISupportInitialize)(this.CTCADLPBox)).EndInit();

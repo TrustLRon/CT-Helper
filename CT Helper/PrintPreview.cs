@@ -20,30 +20,31 @@ namespace CT_Helper
         }
 
         Bitmap memoryImage;
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
             CaptureScreen();
             DialogResult result = printDialog1.ShowDialog();
-
+            
             if (result == DialogResult.OK)
             {
-                printDocument1.Print();                
+                printDocument1.Print();
+                this.Hide();
             }
         }
 
         private void CaptureScreen()
         {
-            Graphics myGraphics = this.CreateGraphics();
-            Size s = this.ClientSize;
-            memoryImage = new Bitmap(s.Width, s.Height, myGraphics);
+            Graphics myGraphics = CreateGraphics();
+            Size s = ClientSize;
+            memoryImage = new Bitmap(s.Width - 40, s.Height - 50, myGraphics);
             Graphics memoryGraphics = Graphics.FromImage(memoryImage);
-            memoryGraphics.CopyFromScreen(this.Location.X, this.Location.Y, 0, 0, s);
+            memoryGraphics.CopyFromScreen(Location.X + 10, Location.Y + 35, 0, 0, s);
         }
 
-        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
-            e.Graphics.DrawImage(memoryImage, 0, 0);
+            e.Graphics.DrawImage(memoryImage, 10, 20);
         }
     }
 }
